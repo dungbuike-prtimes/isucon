@@ -867,6 +867,7 @@ func main() {
 	mux.HandleFunc(pat.Get("/logout"), getLogout)
 	mux.HandleFunc(pat.Get("/"), getIndex)
 	mux.HandleFunc(pat.Get("/posts"), getPosts)
+	mux.HandleFunc(pat.Get("/posts2"), getPosts)
 	mux.HandleFunc(pat.Get("/posts/:id"), getPostsID)
 	mux.HandleFunc(pat.Post("/"), postIndex)
 	mux.HandleFunc(pat.Get("/image/:id.:ext"), getImage)
